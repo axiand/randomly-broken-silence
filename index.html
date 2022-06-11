@@ -1,0 +1,29 @@
+<head>
+    <title>randomly broken silence</title>
+    <meta name="description" content="Break the silence, randomly!">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: navy;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <h3>File</h3>
+    <input type="file" accept="audio/*" multiple="true" id="@File">
+    <p>A random file will play if multiple are selected.</p>
+    <h3>Interval (seconds)</h3>
+    <div style="display: inline-flex;">
+        <input style="width: 50px;" id="@IntervalMin" type="number">
+        <p style="margin: 0px 5px;">TO</p>
+        <input style="width: 50px;" id="@IntervalMax" type="number">
+    </div>
+    <p>Default: 1-10s</p>
+    <h3>Control</h3>
+    <button id="@Control">Start</button>
+    <button id="@Test">Test</button>
+    <script src="./controls.js" defer></script>
+</body>
